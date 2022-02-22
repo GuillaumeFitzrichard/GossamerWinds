@@ -1,10 +1,12 @@
 import React from 'react';
+import Header from './Header.jsx'
+import Nav from './Nav.jsx'
 
 function App() {
   return (
     <div id="gossamer-container">
-      <div id="header">Gossamer Winds</div>
-      <div id="nav-item"> REACT </div>
+      <Header />
+      <Nav />
       <div id="footer">Gossamer Winds 2022</div>
     </div>
   );
