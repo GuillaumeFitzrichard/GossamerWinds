@@ -49,7 +49,7 @@ table {
 /*
 clearfixe above
 */
-#page {
+#gossamer-container {
   display: grid;
   grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
   grid-template-rows: repeat(6, 1fr);
@@ -72,7 +72,7 @@ clearfixe above
   padding: 4vh 1vw 0.5vh 1vw;
   border-bottom: thin double rgb(0, 78, 0); 
 }
-#gossamer-container {
+#nav-item {
   grid-row: 2 / 5;
   grid-column: 2 / 5;
   align-self: start;
