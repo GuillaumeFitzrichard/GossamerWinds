@@ -51,7 +51,7 @@ clearfixe above
 */
 #gossamer-container {
   display: grid;
-  grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+  grid-template-columns: 0.25fr repeat(3, 1fr) 0.25fr;
   grid-template-rows: repeat(6, 1fr);
   gap: 2vw;
   position: relative;
@@ -73,10 +73,12 @@ clearfixe above
   border-bottom: thin double rgb(0, 78, 0); 
 }
 #nav-item {
-  grid-row: 2 / 5;
-  grid-column: 2 / 5;
+  grid-row: 2 / 6;
+  grid-column: 2 / 3;
   align-self: stretch;
-  align-items: stretch;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
   text-align: left;
   font-family: 'Noto Serif Display', serif;
   font-size: 2.75vmax;
