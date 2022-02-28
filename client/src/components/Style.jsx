@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Pieces from './Pieces.jsx'
+import Composer from './Composer.jsx'
 
 let catalogue = (pieces) => {
   let sortedCatalogue = {};
@@ -27,13 +27,24 @@ let catalogue = (pieces) => {
 
 
 const Style = (props) => {
-
-  return (
-    <div id="style">
-      <Pieces 
-      style={catalogue(props.works)}
+  // console.log('style?\n', props, '\ncatalogue?\n', catalogue(props.works))
+  let aComposer = catalogue(props.works).map((entry, id) => {
+    return (
+      <Composer
+        key={id}
+        name={entry[0]}
+        works={entry[1]}
       />
+    )
+  })
+  console.log(props.view, props.genre)
+  return (
+    
+    <div id={props.genre}>
+      <button onClick={props.clickHandle}>{props.genre}</button>
+      {props.view ? aComposer : null}
     </div>
+    
   );
 }
 
