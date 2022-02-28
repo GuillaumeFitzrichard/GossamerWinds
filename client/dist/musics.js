@@ -18,7 +18,7 @@ const classical = [
   `Bach - Suite in C Minor - Praeludium`,
   `Bach - Suite in C Minor - Sarabande`,
   `Bach - Wachet auf, ruft uns die Stimme`,
-  `Bach - Wir glauben all' an einem Gott (Giant Fugue)`,
+  `Bach - Wir glauben all an einem Gott (Giant Fugue)`,
   `Ball - Scenes from a Comedy`,
   `Barber - Summer Music`,
   `Barthe - Passacaille`,
