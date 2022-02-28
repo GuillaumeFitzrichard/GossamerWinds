@@ -51,7 +51,7 @@ clearfixe above
 */
 #gossamer-container {
   display: grid;
-  grid-template-columns: 0.25fr 0.5fr repeat(2, 1fr) 0.25fr;
+  grid-template-columns: 0.15fr 0.5fr repeat(2, 1fr) 0.15fr;
   grid-template-rows: .25fr repeat(4, 1fr) .25fr;
   gap: 1vw;
   position: relative;
@@ -84,7 +84,7 @@ clearfixe above
   font-size: 2.75vmax;
   font-weight: 300;
   font-style: italic;
-  padding: 1vh 3vw 1vw 1vh;
+  padding: 1vh 1vw 1vw 1vh;
 }
 #styles {
   grid-column: 3 / 5;
@@ -102,15 +102,34 @@ clearfixe above
 #styleContainer {
   grid-column: 1 / 4;
   grid-row: 2 / 6;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   align-items: stretch;
 }
-#stylers {
-grid-row: 2 / 6;
-grid-column: 1 / 4;
-align-self: stretch;
+#genreShell {
+  justify-self: auto;
 }
+.active {
+grid-row: 1 / 6;
+align-self: stretch;
+column-count: 4;
+column-width: auto;
+}
+.inactive {
+  display: none;
+}
+#name {
+  font-size: 1vmax;
+  font-weight: bolder;
+}
+#works, li{
+  font-size: 1vmax;
+  font-weight: lighter;
+}
+
 button {
-  align-self: auto;
+  justify-self: stretch;
 }
 #footer {
   grid-row-start: 6;

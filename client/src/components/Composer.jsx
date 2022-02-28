@@ -14,8 +14,8 @@ const Composer = (props) => {
     )
   })
   return (
-    <div id="name">
-      <h1>{props.name}</h1>
+    <div className='name' id={props.name}>
+      <h5>{props.name}</h5>
       {allWorks}
     </div>
   );

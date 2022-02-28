@@ -37,12 +37,21 @@ const Style = (props) => {
       />
     )
   })
-  console.log(props.view, props.genre)
+  let classID = props.view ? 'active' : 'inactive'; 
+  let column = props.view ? '1 / 6' : '7 / -2'
+  let row = props.view ? '1 / 5' : '1 / 3'
   return (
-    
-    <div id={props.genre}>
-      <button onClick={props.clickHandle}>{props.genre}</button>
-      {props.view ? aComposer : null}
+    <div
+      id="genreShell"
+      style={{
+        gridColumn: column,
+        gridRow: row
+      }}
+    >
+      <button id={props.genre} onClick={props.clickHandle}>{props.genre}</button>
+      <div className={classID} id={props.genre}>
+        {props.view ? aComposer : null}
+      </div>
     </div>
     
   );
