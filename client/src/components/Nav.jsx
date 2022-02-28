@@ -1,12 +1,13 @@
 import React from 'react';
+import {Outlet, Link } from 'react-router-dom';
 
 function Nav() {
   return (
     <div id="nav-item">
-      <p>Nav1</p>
-      <p>Nav2</p>
-      <p>Nav3</p>
-      <p>Nav4</p>
+      <Link to="/about">About</Link>
+      <Link to="/media">Media</Link>
+      <Link to="/repertoire">Repertoire</Link>
+      <Link to="/contact">Contact</Link>
     </div>
   );
 }
